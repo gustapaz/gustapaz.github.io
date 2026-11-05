@@ -1,0 +1,9 @@
+---
+import Layout from '../../components/Layout.astro';
+import { copy, type Lang } from '../../data/copy';
+export function getStaticPaths(){return [{params:{lang:'pt'}},{params:{lang:'en'}}]}
+const lang=Astro.params.lang as Lang,t=copy[lang];
+---
+<Layout lang={lang} title={`${t.cvTitle} — Gustavo Paz`} path="curriculo/" alternate="curriculo/">
+<main id="main" tabindex="-1" class="resume wrap"><div class="resume-actions"><a href={`/${lang}/#sobre`} class="text-link">← {t.back}</a><button id="print-cv" class="button primary">{t.print}</button></div><h1>Gustavo Paz</h1><p class="resume-role">{t.role}</p><p>Paraná, {lang==='pt'?'Brasil':'Brazil'} · <a href="https://www.linkedin.com/in/gustapaz/">linkedin.com/in/gustapaz</a> · <a href="https://github.com/gustapaz">github.com/gustapaz</a></p><p class="resume-summary">{t.cvIntro}</p><section><h2>{t.experience}</h2><h3>Cooper Card — {t.cooperRole}</h3><small>{t.cooperDate}</small><p>{t.cooperText}</p><h3>Foco Solution Provider — {t.focoRole}</h3><small>{t.focoDate}</small><p>{t.focoText}</p></section><section><h2>{t.stackLabel}</h2><p>{t.stackBody}</p><p>{t.approachBody}</p></section><section><h2>{t.educationLabel}</h2><p>{t.education}</p><p>{t.technician}</p></section><section><h2>{t.languages}</h2><p>{t.languageText}</p></section><p class="resume-note">{t.cvNote}</p></main>
+</Layout>

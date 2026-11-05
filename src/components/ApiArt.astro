@@ -1,0 +1,9 @@
+---
+const { lang = 'pt' } = Astro.props;
+---
+<div class="api-art" aria-label={lang === 'pt' ? 'Fluxo ilustrativo de uma reserva: pedido, regra e transação.' : 'Illustrative reservation flow: request, rule and transaction.'} role="img">
+  <span class="api-kicker">LASTRO / TRANSACTION FLOW</span>
+  <div class="api-line"><span>POST /reservations</span><b>→</b><span>Idempotency-Key</span></div>
+  <div class="api-core"><i></i><strong>COMMIT<span>atomic · consistent · isolated</span></strong><i></i></div>
+  <div class="api-bottom"><code>BEGIN</code><span>reserve → confirm → release</span><code>200 OK</code></div>
+</div>

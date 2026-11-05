@@ -1,0 +1,576 @@
+{
+  "version": 1,
+  "previews": {
+    "acervo": {
+      "src": "/media/projects/acervo.webp",
+      "small": "/media/projects/acervo-small.webp",
+      "width": 1200,
+      "height": 2698,
+      "source": "https://raw.githubusercontent.com/gustapaz/acervo/HEAD/docs/colecao.jpg",
+      "updated": "2026-10-22T23:51:17Z"
+    },
+    "alunissagem": {
+      "src": "/media/projects/alunissagem.webp",
+      "small": "/media/projects/alunissagem-small.webp",
+      "width": 1200,
+      "height": 1117,
+      "source": "https://raw.githubusercontent.com/gustapaz/alunissagem/HEAD/docs/arquivo.jpg",
+      "updated": "2026-10-31T09:57:58Z"
+    },
+    "andar-zero": {
+      "src": "/media/projects/andar-zero.webp",
+      "small": "/media/projects/andar-zero-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/andar-zero/HEAD/docs/primeira-pagina.jpg",
+      "updated": "2026-10-30T21:47:24Z"
+    },
+    "apice": {
+      "src": "/media/projects/apice.webp",
+      "small": "/media/projects/apice-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/apice/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-02T00:34:48Z"
+    },
+    "arremate": {
+      "src": "/media/projects/arremate.webp",
+      "small": "/media/projects/arremate-small.webp",
+      "width": 1200,
+      "height": 1318,
+      "source": "https://raw.githubusercontent.com/gustapaz/arremate/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-03T00:27:04Z"
+    },
+    "azimute-api": {
+      "src": "/media/projects/azimute-api.webp",
+      "small": "/media/projects/azimute-api-small.webp",
+      "width": 1200,
+      "height": 800,
+      "source": "https://azimute-api-gustapaz.starrylinen.chatgpt.site/",
+      "kind": "live",
+      "capturedAt": "2026-11-05T00:13:47.321Z",
+      "updated": "2026-11-01T19:01:49Z"
+    },
+    "baliza": {
+      "src": "/media/projects/baliza.webp",
+      "small": "/media/projects/baliza-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/baliza/HEAD/docs/screenshots/desktop.jpg",
+      "updated": "2026-11-01T19:01:50Z"
+    },
+    "banca": {
+      "src": "/media/projects/banca.webp",
+      "small": "/media/projects/banca-small.webp",
+      "width": 1200,
+      "height": 834,
+      "source": "https://raw.githubusercontent.com/gustapaz/banca/HEAD/docs/banca.jpg",
+      "updated": "2026-10-31T10:22:11Z"
+    },
+    "brasao": {
+      "src": "/media/projects/brasao.webp",
+      "small": "/media/projects/brasao-small.webp",
+      "width": 1200,
+      "height": 750,
+      "source": "https://raw.githubusercontent.com/gustapaz/brasao/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-02T01:20:13Z"
+    },
+    "brava": {
+      "src": "/media/projects/brava.webp",
+      "small": "/media/projects/brava-small.webp",
+      "width": 1200,
+      "height": 800,
+      "source": "https://gustapaz.github.io/brava/",
+      "kind": "live",
+      "capturedAt": "2026-11-05T00:14:41.422Z",
+      "updated": "2026-10-22T01:41:22Z"
+    },
+    "brotar": {
+      "src": "/media/projects/brotar.webp",
+      "small": "/media/projects/brotar-small.webp",
+      "width": 1200,
+      "height": 1566,
+      "source": "https://raw.githubusercontent.com/gustapaz/brotar/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-03T10:04:41Z"
+    },
+    "cadencia": {
+      "src": "/media/projects/cadencia.webp",
+      "small": "/media/projects/cadencia-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/cadencia/HEAD/docs/screenshots/desktop.jpg",
+      "updated": "2026-11-01T19:01:48Z"
+    },
+    "carretel": {
+      "src": "/media/projects/carretel.webp",
+      "small": "/media/projects/carretel-small.webp",
+      "width": 1200,
+      "height": 1401,
+      "source": "https://raw.githubusercontent.com/gustapaz/carretel/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-03T12:15:28Z"
+    },
+    "caustica": {
+      "src": "/media/projects/caustica.webp",
+      "small": "/media/projects/caustica-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/caustica/HEAD/docs/experience.png",
+      "updated": "2026-11-01T19:19:39Z"
+    },
+    "chanfro": {
+      "src": "/media/projects/chanfro.webp",
+      "small": "/media/projects/chanfro-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/chanfro/HEAD/docs/screenshots/desktop.jpg",
+      "updated": "2026-11-01T19:02:04Z"
+    },
+    "cifra": {
+      "src": "/media/projects/cifra.webp",
+      "small": "/media/projects/cifra-small.webp",
+      "width": 1200,
+      "height": 1251,
+      "source": "https://raw.githubusercontent.com/gustapaz/cifra/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-02T23:51:24Z"
+    },
+    "cine-aurora": {
+      "src": "/media/projects/cine-aurora.webp",
+      "small": "/media/projects/cine-aurora-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/cine-aurora/HEAD/docs/desktop.png",
+      "updated": "2026-10-21T21:49:17Z"
+    },
+    "codepop": {
+      "src": "/media/projects/codepop.webp",
+      "small": "/media/projects/codepop-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/codepop/HEAD/docs/trilha.jpg",
+      "updated": "2026-10-31T02:25:03Z"
+    },
+    "confete": {
+      "src": "/media/projects/confete.webp",
+      "small": "/media/projects/confete-small.webp",
+      "width": 1200,
+      "height": 1703,
+      "source": "https://raw.githubusercontent.com/gustapaz/confete/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-03T16:26:49Z"
+    },
+    "cortejo": {
+      "src": "/media/projects/cortejo.webp",
+      "small": "/media/projects/cortejo-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/cortejo/HEAD/docs/screenshots/desktop.jpg",
+      "updated": "2026-11-01T19:04:15Z"
+    },
+    "crivo-api": {
+      "src": "/media/projects/crivo-api.webp",
+      "small": "/media/projects/crivo-api-small.webp",
+      "width": 1200,
+      "height": 800,
+      "source": "https://crivo-api-gustapaz.starrylinen.chatgpt.site/",
+      "kind": "live",
+      "capturedAt": "2026-11-05T00:14:32.419Z",
+      "updated": "2026-11-01T19:05:13Z"
+    },
+    "croma-lab": {
+      "src": "/media/projects/croma-lab.webp",
+      "small": "/media/projects/croma-lab-small.webp",
+      "width": 1200,
+      "height": 1375,
+      "source": "https://raw.githubusercontent.com/gustapaz/croma-lab/HEAD/docs/estudio.jpg",
+      "updated": "2026-10-30T21:25:04Z"
+    },
+    "desvio": {
+      "src": "/media/projects/desvio.webp",
+      "small": "/media/projects/desvio-small.webp",
+      "width": 1200,
+      "height": 1588,
+      "source": "https://raw.githubusercontent.com/gustapaz/desvio/HEAD/docs/mapa.jpg",
+      "updated": "2026-10-25T21:07:38Z"
+    },
+    "doca": {
+      "src": "/media/projects/doca.webp",
+      "small": "/media/projects/doca-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/doca/HEAD/docs/screenshots/desktop.jpg",
+      "updated": "2026-11-01T19:03:43Z"
+    },
+    "emenda-api": {
+      "src": "/media/projects/emenda-api.webp",
+      "small": "/media/projects/emenda-api-small.webp",
+      "width": 1200,
+      "height": 800,
+      "source": "https://emenda-api-gustapaz.starrylinen.chatgpt.site/",
+      "kind": "live",
+      "capturedAt": "2026-11-05T00:14:07.914Z",
+      "updated": "2026-11-01T19:06:31Z"
+    },
+    "estrato": {
+      "src": "/media/projects/estrato.webp",
+      "small": "/media/projects/estrato-small.webp",
+      "width": 1200,
+      "height": 612,
+      "source": "https://raw.githubusercontent.com/gustapaz/estrato/HEAD/docs/experiencia.jpg",
+      "updated": "2026-10-31T11:45:23Z"
+    },
+    "fagulha": {
+      "src": "/media/projects/fagulha.webp",
+      "small": "/media/projects/fagulha-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/fagulha/HEAD/docs/screenshots/desktop.jpg",
+      "updated": "2026-11-01T19:02:50Z"
+    },
+    "foco-optico": {
+      "src": "/media/projects/foco-optico.webp",
+      "small": "/media/projects/foco-optico-small.webp",
+      "width": 1200,
+      "height": 586,
+      "source": "https://raw.githubusercontent.com/gustapaz/foco-optico/HEAD/docs/laboratorio.jpg",
+      "updated": "2026-10-31T11:52:38Z"
+    },
+    "forma-studio": {
+      "src": "/media/projects/forma-studio.webp",
+      "small": "/media/projects/forma-studio-small.webp",
+      "width": 1200,
+      "height": 790,
+      "source": "https://raw.githubusercontent.com/gustapaz/forma-studio/HEAD/docs/desktop.png",
+      "updated": "2026-10-21T20:29:07Z"
+    },
+    "fresta": {
+      "src": "/media/projects/fresta.webp",
+      "small": "/media/projects/fresta-small.webp",
+      "width": 1200,
+      "height": 1490,
+      "source": "https://raw.githubusercontent.com/gustapaz/fresta/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-03T13:29:14Z"
+    },
+    "furtivo": {
+      "src": "/media/projects/furtivo.webp",
+      "small": "/media/projects/furtivo-small.webp",
+      "width": 1086,
+      "height": 872,
+      "source": "https://raw.githubusercontent.com/gustapaz/furtivo/HEAD/docs/local-victory.png",
+      "updated": "2026-11-02T13:17:57Z"
+    },
+    "ilhota": {
+      "src": "/media/projects/ilhota.webp",
+      "small": "/media/projects/ilhota-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/ilhota/HEAD/docs/screenshots/desktop.jpg",
+      "updated": "2026-11-01T19:06:40Z"
+    },
+    "ima": {
+      "src": "/media/projects/ima.webp",
+      "small": "/media/projects/ima-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/ima/HEAD/docs/experience.png",
+      "updated": "2026-11-01T21:22:22Z"
+    },
+    "indice-api": {
+      "src": "/media/projects/indice-api.webp",
+      "small": "/media/projects/indice-api-small.webp",
+      "width": 1200,
+      "height": 800,
+      "source": "https://indice-api-gustapaz.starrylinen.chatgpt.site/",
+      "kind": "live",
+      "capturedAt": "2026-11-05T00:13:57.582Z",
+      "updated": "2026-11-01T23:15:39Z"
+    },
+    "janela-api": {
+      "src": "/media/projects/janela-api.webp",
+      "small": "/media/projects/janela-api-small.webp",
+      "width": 1200,
+      "height": 800,
+      "source": "https://janela-api-gustapaz.starrylinen.chatgpt.site/",
+      "kind": "live",
+      "capturedAt": "2026-11-05T00:13:52.491Z",
+      "updated": "2026-11-01T23:15:46Z"
+    },
+    "lastro-api": {
+      "src": "/media/projects/lastro-api.webp",
+      "small": "/media/projects/lastro-api-small.webp",
+      "width": 1200,
+      "height": 800,
+      "source": "https://lastro-api-gustapaz.starrylinen.chatgpt.site/",
+      "kind": "live",
+      "capturedAt": "2026-11-05T00:14:37.803Z",
+      "updated": "2026-11-01T19:06:23Z"
+    },
+    "margem": {
+      "src": "/media/projects/margem.webp",
+      "small": "/media/projects/margem-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/margem/HEAD/docs/indice.jpg",
+      "updated": "2026-10-24T00:10:24Z"
+    },
+    "mise": {
+      "src": "/media/projects/mise.webp",
+      "small": "/media/projects/mise-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/mise/HEAD/docs/desktop.png",
+      "updated": "2026-10-21T20:50:32Z"
+    },
+    "moagem": {
+      "src": "/media/projects/moagem.webp",
+      "small": "/media/projects/moagem-small.webp",
+      "width": 1200,
+      "height": 874,
+      "source": "https://raw.githubusercontent.com/gustapaz/moagem/HEAD/docs/preparo.jpg",
+      "updated": "2026-10-31T10:12:07Z"
+    },
+    "nexo-api": {
+      "src": "/media/projects/nexo-api.webp",
+      "small": "/media/projects/nexo-api-small.webp",
+      "width": 1200,
+      "height": 800,
+      "source": "https://nexo-api-gustapaz.starrylinen.chatgpt.site/",
+      "kind": "live",
+      "capturedAt": "2026-11-05T00:14:27.638Z",
+      "updated": "2026-11-01T20:20:14Z"
+    },
+    "nomade": {
+      "src": "/media/projects/nomade.webp",
+      "small": "/media/projects/nomade-small.webp",
+      "width": 1200,
+      "height": 1059,
+      "source": "https://raw.githubusercontent.com/gustapaz/nomade/HEAD/docs/roteiro.png",
+      "updated": "2026-10-22T22:48:20Z"
+    },
+    "orbita": {
+      "src": "/media/projects/orbita.webp",
+      "small": "/media/projects/orbita-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/orbita/HEAD/docs/observatorio.jpg",
+      "updated": "2026-10-31T02:32:42Z"
+    },
+    "pacto-api": {
+      "src": "/media/projects/pacto-api.webp",
+      "small": "/media/projects/pacto-api-small.webp",
+      "width": 1200,
+      "height": 800,
+      "source": "https://pacto-api-gustapaz.starrylinen.chatgpt.site/",
+      "kind": "live",
+      "capturedAt": "2026-11-05T00:14:13.031Z",
+      "updated": "2026-11-01T19:04:42Z"
+    },
+    "partilha-api": {
+      "src": "/media/projects/partilha-api.webp",
+      "small": "/media/projects/partilha-api-small.webp",
+      "width": 1200,
+      "height": 800,
+      "source": "https://partilha-api-gustapaz.starrylinen.chatgpt.site/",
+      "kind": "live",
+      "capturedAt": "2026-11-05T00:14:22.715Z",
+      "updated": "2026-11-01T19:03:48Z"
+    },
+    "pendular": {
+      "src": "/media/projects/pendular.webp",
+      "small": "/media/projects/pendular-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/pendular/HEAD/docs/experience.png",
+      "updated": "2026-11-01T23:15:43Z"
+    },
+    "postera": {
+      "src": "/media/projects/postera.webp",
+      "small": "/media/projects/postera-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/postera/HEAD/docs/experience.png",
+      "updated": "2026-11-01T19:06:19Z"
+    },
+    "prorroga": {
+      "src": "/media/projects/prorroga.webp",
+      "small": "/media/projects/prorroga-small.webp",
+      "width": 1200,
+      "height": 1909,
+      "source": "https://raw.githubusercontent.com/gustapaz/prorroga/HEAD/docs/prorroga.jpg",
+      "updated": "2026-10-23T09:37:25Z"
+    },
+    "pulso": {
+      "src": "/media/projects/pulso.webp",
+      "small": "/media/projects/pulso-small.webp",
+      "width": 1200,
+      "height": 2899,
+      "source": "https://raw.githubusercontent.com/gustapaz/pulso/HEAD/docs/estudio.png",
+      "updated": "2026-10-22T23:19:10Z"
+    },
+    "quadra": {
+      "src": "/media/projects/quadra.webp",
+      "small": "/media/projects/quadra-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/quadra/HEAD/docs/quadra.jpg",
+      "updated": "2026-10-23T09:25:32Z"
+    },
+    "rastro-api": {
+      "src": "/media/projects/rastro-api.webp",
+      "small": "/media/projects/rastro-api-small.webp",
+      "width": 1200,
+      "height": 800,
+      "source": "https://rastro-api-gustapaz.starrylinen.chatgpt.site/",
+      "kind": "live",
+      "capturedAt": "2026-11-05T00:13:42.393Z",
+      "updated": "2026-11-01T21:23:15Z"
+    },
+    "refugio": {
+      "src": "/media/projects/refugio.webp",
+      "small": "/media/projects/refugio-small.webp",
+      "width": 1200,
+      "height": 994,
+      "source": "https://raw.githubusercontent.com/gustapaz/refugio/HEAD/docs/sala.jpg",
+      "updated": "2026-10-31T02:45:34Z"
+    },
+    "ricochete": {
+      "src": "/media/projects/ricochete.webp",
+      "small": "/media/projects/ricochete-small.webp",
+      "width": 1086,
+      "height": 902,
+      "source": "https://raw.githubusercontent.com/gustapaz/ricochete/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-01T23:38:00Z"
+    },
+    "rubato": {
+      "src": "/media/projects/rubato.webp",
+      "small": "/media/projects/rubato-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/rubato/HEAD/docs/screenshots/desktop.jpg",
+      "updated": "2026-11-01T19:03:07Z"
+    },
+    "salao-17": {
+      "src": "/media/projects/salao-17.webp",
+      "small": "/media/projects/salao-17-small.webp",
+      "width": 1200,
+      "height": 1169,
+      "source": "https://raw.githubusercontent.com/gustapaz/salao-17/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-03T09:41:13Z"
+    },
+    "selo-api": {
+      "src": "/media/projects/selo-api.webp",
+      "small": "/media/projects/selo-api-small.webp",
+      "width": 1200,
+      "height": 800,
+      "source": "https://selo-api-gustapaz.starrylinen.chatgpt.site/",
+      "kind": "live",
+      "capturedAt": "2026-11-05T00:14:18.065Z",
+      "updated": "2026-11-01T19:04:38Z"
+    },
+    "semeia": {
+      "src": "/media/projects/semeia.webp",
+      "small": "/media/projects/semeia-small.webp",
+      "width": 1200,
+      "height": 963,
+      "source": "https://raw.githubusercontent.com/gustapaz/semeia/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-02T14:49:15Z"
+    },
+    "sincope": {
+      "src": "/media/projects/sincope.webp",
+      "small": "/media/projects/sincope-small.webp",
+      "width": 1200,
+      "height": 1060,
+      "source": "https://raw.githubusercontent.com/gustapaz/sincope/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-02T13:45:50Z"
+    },
+    "tacada": {
+      "src": "/media/projects/tacada.webp",
+      "small": "/media/projects/tacada-small.webp",
+      "width": 1200,
+      "height": 1127,
+      "source": "https://raw.githubusercontent.com/gustapaz/tacada/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-02T14:16:33Z"
+    },
+    "tandem": {
+      "src": "/media/projects/tandem.webp",
+      "small": "/media/projects/tandem-small.webp",
+      "width": 1200,
+      "height": 1370,
+      "source": "https://raw.githubusercontent.com/gustapaz/tandem/HEAD/docs/dashboard.png",
+      "updated": "2026-10-22T01:15:31Z"
+    },
+    "trama-material": {
+      "src": "/media/projects/trama-material.webp",
+      "small": "/media/projects/trama-material-small.webp",
+      "width": 900,
+      "height": 430,
+      "source": "https://raw.githubusercontent.com/gustapaz/trama-material/HEAD/docs/fotografias.jpg",
+      "updated": "2026-10-31T12:02:49Z"
+    },
+    "urdume": {
+      "src": "/media/projects/urdume.webp",
+      "small": "/media/projects/urdume-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/urdume/HEAD/docs/screenshots/desktop.jpg",
+      "updated": "2026-11-01T19:07:12Z"
+    },
+    "vagalume": {
+      "src": "/media/projects/vagalume.webp",
+      "small": "/media/projects/vagalume-small.webp",
+      "width": 1200,
+      "height": 692,
+      "source": "https://raw.githubusercontent.com/gustapaz/vagalume/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-01T23:57:25Z"
+    },
+    "vagao": {
+      "src": "/media/projects/vagao.webp",
+      "small": "/media/projects/vagao-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/vagao/HEAD/docs/experience.png",
+      "updated": "2026-11-01T23:15:42Z"
+    },
+    "vao": {
+      "src": "/media/projects/vao.webp",
+      "small": "/media/projects/vao-small.webp",
+      "width": 1200,
+      "height": 1535,
+      "source": "https://raw.githubusercontent.com/gustapaz/vao/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-02T21:43:46Z"
+    },
+    "vazao": {
+      "src": "/media/projects/vazao.webp",
+      "small": "/media/projects/vazao-small.webp",
+      "width": 1200,
+      "height": 675,
+      "source": "https://raw.githubusercontent.com/gustapaz/vazao/HEAD/docs/screenshots/desktop.jpg",
+      "updated": "2026-11-01T21:21:06Z"
+    },
+    "veletra": {
+      "src": "/media/projects/veletra.webp",
+      "small": "/media/projects/veletra-small.webp",
+      "width": 1200,
+      "height": 911,
+      "source": "https://raw.githubusercontent.com/gustapaz/veletra/HEAD/docs/public-gameplay.png",
+      "updated": "2026-11-03T00:53:46Z"
+    },
+    "vertice-studio": {
+      "src": "/media/projects/vertice-studio.webp",
+      "small": "/media/projects/vertice-studio-small.webp",
+      "width": 1086,
+      "height": 872,
+      "source": "https://raw.githubusercontent.com/gustapaz/vertice-studio/HEAD/docs/experience.png",
+      "updated": "2026-11-01T19:06:47Z"
+    },
+    "vigia-api": {
+      "src": "/media/projects/vigia-api.webp",
+      "small": "/media/projects/vigia-api-small.webp",
+      "width": 1200,
+      "height": 800,
+      "source": "https://vigia-api-gustapaz.starrylinen.chatgpt.site/",
+      "kind": "live",
+      "capturedAt": "2026-11-05T00:14:02.521Z",
+      "updated": "2026-11-01T19:05:48Z"
+    }
+  },
+  "documents": {}
+}

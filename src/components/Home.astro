@@ -1,0 +1,50 @@
+---
+import Layout from './Layout.astro';
+import '../styles/experience.css';
+import '../styles/identity.css';
+import '../styles/refinement.css';
+import manifest from '../../public/data/previews.json';
+import IntroScene from './IntroScene.astro';
+import ApiArt from './ApiArt.astro';
+import { copy, type Lang } from '../data/copy';
+import { projects } from '../data/projects';
+import snapshot from '../../public/data/github.json';
+import {chooseHighlights} from '../lib/presentation.mjs';
+import { CATEGORIES } from '../lib/catalog.mjs';
+const {lang} = Astro.props as {lang:Lang}; const t=copy[lang];
+let seed=[...snapshot.repositories.map(r=>r.name).join('|')].reduce((h,c)=>Math.imul(h^c.charCodeAt(0),16777619)>>>0,2166136261);const random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
+const featured=chooseHighlights(snapshot.repositories,manifest.previews,[],random).map((r:any,i:number)=>{const p=projects.find(p=>p.repo===r.name);const preview=(manifest.previews as any)[r.name];return {repo:r.name,slug:p?.slug||r.name,name:p?.name||r.name.replace(/[-_]/g,' '),category:r.category,image:preview.src,small:preview.small,width:preview.width,height:preview.height,number:String(i+1).padStart(2,'0'),stack:p?.stack||[r.language,...r.topics.slice(0,3)].filter(Boolean),url:p?`/${lang}/projetos/${p.slug}/`:r.demo||r.url,external:!p,action:p?t.study:r.demo?t.demo:t.code,tag:p?.[lang].tag||r.language||t.categories[r.category as keyof typeof t.categories],summary:p?.[lang].summary||r.description||t.generic};});
+---
+<Layout lang={lang}>
+<main id="main" tabindex="-1">
+  <IntroScene lang={lang}/>
+  <section class="layer-details wrap" aria-label={t.journey}><h2 class="sr-only">{t.journey}</h2>{t.layers.map((layer,i)=><div class="reveal"><span class="small-index">0{i+1} /</span><h3>{layer}</h3><p>{t.layerTexts[i]}</p></div>)}</section>
+  <section id="destaques" class="featured-story" aria-labelledby="selected-title">
+    <div class="work-seam" aria-hidden="true"><i></i><b></b></div><div class="story-opening wrap"><div class="section-intro"><span class="eyebrow">{t.featuredEyebrow}</span><h2 id="selected-title">{t.featuredTitle.split('\n').map(line=><span>{line}</span>)}</h2><p>{t.featuredBody}</p><div class="highlight-controls"><button id="shuffle-highlights" class="button outline" disabled>{lang==='pt'?'Explorar outra seleção':'Explore another selection'}</button><span class="highlight-status" role="status"></span></div></div><span class="story-total" aria-hidden="true">{String(featured.length).padStart(2,'0')}</span></div>
+    <div class="project-screen">
+      <div class="project-film">{featured.map((p,i)=><article class={`film-panel film-${i}`} data-film={i}>
+        <div class="film-ambience" aria-hidden="true">{p.image?<img src={p.image} alt="" srcset={p.width>600?`${p.small} 600w, ${p.image} ${p.width}w`:undefined} sizes="(max-width: 760px) 88vw, 65vw" width={p.width} height={p.height} loading="lazy" decoding="async"/>:<div class="api-nebula"></div>}</div>
+        <div class="film-number" aria-hidden="true">{p.number}</div><div class="film-motif" aria-hidden="true">{i===1?<><span>01 / IDEA</span><i></i><span>02 / BUILD</span><i></i><span>03 / EXPERIENCE</span></>:i===3?Array.from({length:7},(_,n)=><i style={{'--piece':n}}></i>):i===2?<span>explore.</span>:<span>{t.categories[p.category as keyof typeof t.categories].toUpperCase()}</span>}</div>
+        <div class="film-layout"><div class="film-copy"><span class="eyebrow">{t.personal} / {t.categories[p.category as keyof typeof t.categories]}</span><h3>{p.name}</h3><p class="film-tag">{p.tag}</p><p>{p.summary}</p><a class="film-study" href={p.url} target={p.external?'_blank':undefined} rel={p.external?'noopener noreferrer':undefined}>{p.action}<span class="study-line" aria-hidden="true"></span></a></div><a class="film-frame" href={p.url} target={p.external?'_blank':undefined} rel={p.external?'noopener noreferrer':undefined} aria-label={`${p.action}: ${p.name}`} style={{viewTransitionName:p.external?'none':`project-${p.slug}`}}><div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span>{p.repo}</span></div>{p.image?<img src={p.image} alt={`${t.previewLabel}: ${p.name}`} srcset={p.width>600?`${p.small} 600w, ${p.image} ${p.width}w`:undefined} sizes="(max-width: 760px) 88vw, 65vw" width={p.width} height={p.height} loading="lazy" decoding="async"/>:<ApiArt lang={lang}/>}</a></div>
+        <div class="film-stack">{p.stack.map(item=><span>{item}</span>)}</div>
+      </article>)}
+      <nav class="film-navigation" aria-label={lang==='pt'?'Projetos selecionados':'Selected projects'}>{featured.map((p,i)=><button data-film-target={i} aria-label={`${p.number} ${p.name}`} aria-pressed={i===0?'true':'false'}><span>{p.number}</span><strong>{p.name}</strong><i aria-hidden="true"></i></button>)}</nav></div>
+    </div>
+  </section>
+  <section id="acervo" class="archive section-space" aria-labelledby="archive-title"><div class="wrap"><div class="archive-heading reveal"><div><span class="eyebrow">{t.archiveEyebrow}</span><h2 id="archive-title">{t.archiveTitle}</h2></div><p>{t.archiveBody}</p></div>
+    <script id="preview-manifest" type="application/json" set:html={JSON.stringify(manifest).replaceAll("<","\\u003c")}></script><div id="catalog" data-lang={lang}>
+      <div class="catalog-toolbar"><div class="search-field"><span aria-hidden="true">⌕</span><label class="sr-only" for="project-search">{t.searchLabel}</label><input id="project-search" type="search" placeholder={t.search} maxlength="120" autocomplete="off"/></div><label class="sort-field"><span class="sr-only">{t.sortLabel}</span><select id="project-sort"><option value="created">{t.created}</option><option value="updated">{t.updated}</option><option value="name">{t.name}</option></select></label><div class="view-switch" role="group" aria-label={lang === 'pt' ? 'Visualização':'View'}><button id="view-gallery" aria-pressed="true">{t.gallery}</button><button id="view-list" aria-pressed="false">{t.list}</button></div></div>
+      <div class="catalog-subbar"><div id="category-filters" class="category-filters" role="group" aria-label={lang === 'pt' ? 'Categoria':'Category'}>{CATEGORIES.map(c=><button data-category={c} aria-pressed={c === 'all' ? 'true':'false'}>{t.categories[c as keyof typeof t.categories]}</button>)}</div><span id="result-count" role="status" aria-live="polite">{snapshot.repositories.length} {t.results}</span></div>
+      <p id="catalog-progress" class="catalog-progress" role="status" aria-live="polite"></p><div id="catalog-results" class="catalog-results"></div><button id="load-more" class="button more-button" hidden>{t.more} ↓</button>
+      <div class="sync-line"><span id="sync-status"><i></i>{t.snapshot}</span><time id="sync-date" datetime={snapshot.fetchedAt}>{new Date(snapshot.fetchedAt).toLocaleDateString(lang === 'pt' ? 'pt-BR':'en-US',{timeZone:'UTC'})}</time></div>
+      <details class="catalog-index"><summary>{lang==='pt'?'Índice completo dos repositórios':'Complete repository index'}</summary><ul>{snapshot.repositories.map(r=><li><a href={r.url} target="_blank" rel="noopener noreferrer">{r.name}</a><p>{r.description}</p></li>)}</ul></details><noscript><p>{lang==='pt'?'Use o índice completo acima para navegar sem JavaScript.':'Use the complete index above to browse without JavaScript.'}</p></noscript>
+    </div>
+  </div></section>
+  <section id="sobre" class="about wrap section-space"><div class="about-opening"><div class="reveal"><span class="eyebrow">{t.aboutEyebrow}</span><h2>{t.aboutTitle.split('\n').map(line=><span>{line}</span>)}</h2></div><div class="about-text reveal"><p>{t.aboutBody}</p><p>{t.aboutMore}</p><a class="text-link" href={`/${lang}/curriculo/`}>{t.resume}</a></div></div>
+    <div class="experience-list"><h3 class="eyebrow">{t.experience}</h3><article class="job reveal"><div><span>{t.cooperDate}</span><h3>Cooper Card</h3><small>{t.cooperRole}</small></div><p>{t.cooperText}</p></article><article class="job reveal"><div><span>{t.focoDate}</span><h3>Foco Solution Provider</h3><small>{t.focoRole}</small></div><p>{t.focoText}</p></article><div class="education"><p>{t.education}</p><p>{t.technician}</p></div></div>
+    <div class="approach reveal"><span class="eyebrow">{t.approach}</span><h3>{t.approachTitle}</h3><p>{t.approachBody}</p><div class="skills"><div><h4>{t.stackLabel}</h4><p>{t.stackBody}</p></div><div><h4>{t.labLabel}</h4><p>{t.labBody}</p></div></div></div>
+  </section>
+  <section id="contato" class="contact section-space"><div class="wrap"><span class="eyebrow">{t.contactEyebrow}</span><h2 class="reveal">{t.contactTitle.split('\n').map(line=><span>{line}</span>)}</h2><div class="contact-bottom"><p>{t.contactBody}</p><div class="contact-actions"><a class="button primary" href="https://www.linkedin.com/in/gustapaz/" target="_blank" rel="noopener noreferrer">{t.linkedin}</a><a class="text-link" href={`/${lang}/curriculo/`}>{t.resume}</a></div></div><div class="contact-scopes">{t.capabilities.map((c,i)=><article><b>0{i+1}</b><h3>{c}</h3><p>{t.capabilityDetails[i]}</p></article>)}</div><div class="closing-signature" aria-hidden="true"><span class="signature-name">GUSTAVO PAZ<span class="signature-dot"><i></i><b class="signature-light"></b></span></span><small>{lang==='pt'?'TODA IDEIA COMEÇA COM UMA CONVERSA.':'EVERY IDEA STARTS WITH A CONVERSATION.'}</small></div></div></section>
+</main>
+<script>import '../scripts/highlights'; import '../scripts/catalog'; import '../scripts/kinetic';</script>
+</Layout>

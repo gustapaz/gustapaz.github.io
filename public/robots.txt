@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gustapaz.github.io/sitemap.xml

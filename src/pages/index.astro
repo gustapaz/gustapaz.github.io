@@ -1,0 +1,5 @@
+---
+import Home from '../components/Home.astro';
+---
+<Home lang="pt"/>
+<script>if(location.pathname === '/') { let preferred='pt';try{preferred=localStorage.getItem('gp.lang') || (navigator.language.startsWith('pt')?'pt':'en')}catch{}location.replace(`/${preferred==='en'?'en':'pt'}/${location.search}${location.hash}`); }</script>

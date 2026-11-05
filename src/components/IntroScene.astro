@@ -1,0 +1,21 @@
+---
+import { type Lang, copy } from '../data/copy';
+const {lang}=Astro.props as {lang:Lang};const t=copy[lang];
+const word=(text:string)=>Array.from(text).map(c=>({c}));
+---
+<section id="inicio" class="experience identity-scene" aria-label={t.journey}>
+ <div class="stage">
+  <div class="identity-atmosphere" aria-hidden="true"><canvas class="light-field"></canvas><div class="identity-grain"></div><div class="identity-vignette"></div></div>
+  <div class="identity-axis" aria-hidden="true"><span>GP / 8051DF</span><i></i><span>{lang==='pt'?'DO PENSAMENTO AO MOVIMENTO':'FROM THOUGHT TO MOTION'}</span></div>
+  <div class="identity-opening">
+   <p class="identity-eyebrow">{lang==='pt'?'DESENVOLVIMENTO É DAR FORMA AO INVISÍVEL.':'DEVELOPMENT GIVES SHAPE TO THE INVISIBLE.'}</p>
+   <h1 class="identity-name" aria-label="Gustavo Paz"><span class="name-gustavo" aria-hidden="true">{word('GUSTAVO').map(({c})=><i>{c}</i>)}</span><span class="name-paz" aria-hidden="true">{word('PAZ').map(({c})=><i>{c}</i>)}<b>.</b></span></h1>
+   <div class="identity-intro"><p>{t.role}</p><p>{lang==='pt'?'Da lógica que sustenta à interface que surpreende.':'From the logic underneath to the interface that moves you.'}</p></div>
+   <div class="identity-actions"><a href="#destaques">{t.explore}<span class="action-rule" aria-hidden="true"></span></a><a href="#contato">{t.talk}</a></div>
+  </div>
+  <div class="identity-underlay" aria-hidden="true"><span>const intention = create();</span><span>experience.compose(intention);</span><span>return somethingMeaningful;</span></div>
+  <div class="identity-act act-two" aria-hidden="true"><p>01 — {lang==='pt'?'A ORIGEM':'THE ORIGIN'}</p><h2>{lang==='pt'?'Antes da tela,':'Before the screen,'}<br/><em>{lang==='pt'?'uma intenção.':'an intention.'}</em></h2><span>{lang==='pt'?'Entender. Conectar. Transformar.':'Understand. Connect. Transform.'}</span></div>
+  <div class="identity-act act-three" aria-hidden="true"><p>02 — {lang==='pt'?'A EXPRESSÃO':'THE EXPRESSION'}</p><h2><span>{lang==='pt'?'LÓGICA':'LOGIC'}</span><span>{lang==='pt'?'QUE GANHA':'IN'}</span><em>{lang==='pt'?'VIDA.':'MOTION.'}</em></h2><span>FRONT-END / BACK-END / {lang==='pt'?'EXPERIÊNCIAS':'EXPERIENCES'}</span></div>
+  <div class="identity-footer"><span class="identity-edition">GUSTAVO PAZ<br/><small>{lang==='pt'?'PORTFÓLIO INTERATIVO':'INTERACTIVE PORTFOLIO'}</small></span><span class="identity-scroll">{t.scroll}<i aria-hidden="true"></i></span><span class="identity-chapter" aria-hidden="true"><b>00</b> / 02</span></div>
+ </div>
+</section>
